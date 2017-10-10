@@ -21,7 +21,6 @@ public abstract class TimeService implements Service{
 		if(record.getServiceCode().equals(getServiceCode())){
 			joined = true;
 		}
-		System.out.println(record.getServiceCode());
 	}
 
 	public abstract String getServiceCode();

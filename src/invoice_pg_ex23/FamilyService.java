@@ -2,13 +2,13 @@ package invoice_pg_ex23;
 
 public class FamilyService  implements Service{
 
-	private int TEL_NUMBER = 2;
-	private String SERVICE_CODE = "C1";
-	private int BASIC_CHARGE = 100;
+	private static int TEL_NUMBER = 2;
+	private static String SERVICE_CODE = "C1";
+	private static int BASIC_CHARGE = 100;
 
-	boolean joined = false;
-	String[] telNumbers = new String[TEL_NUMBER];
-	int telNumberCount = 0;
+	private boolean joined = false;
+	private String[] telNumbers = new String[TEL_NUMBER];
+	private int telNumberCount = 0;
 
 	public void clear(){
 		joined = false;

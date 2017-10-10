@@ -2,10 +2,10 @@ package invoice_pg_ex23;
 
 public abstract class NightService extends TimeService {
 
-	int START_TIME = 23;
-	int END_TIME = 5;
-	String SERVICE_CODE = "E2";
-	int BASIC_CHARGE = 500;
+	private static int START_TIME = 23;
+	private static int END_TIME = 5;
+	private static String SERVICE_CODE = "E2";
+	private static int BASIC_CHARGE = 500;
 
 	public boolean isServiceTime(int hour){
 		if (START_TIME <= hour && hour < END_TIME  ){

@@ -2,10 +2,10 @@ package invoice_pg_ex23;
 
 public class DayService extends TimeService{
 
-	int START_TIME = 8;
-	int END_TIME = 17;
-	String SERVICE_CODE = "E1";
-	int BASIC_CHARGE = 200;
+	private static int START_TIME = 8;
+	private static int END_TIME = 17;
+	private static String SERVICE_CODE = "E1";
+	private static int BASIC_CHARGE = 200;
 
 	public boolean isServiceTime(int hour){
 		if (START_TIME <= hour && hour < END_TIME  ){

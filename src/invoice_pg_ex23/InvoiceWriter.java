@@ -17,7 +17,7 @@ public class InvoiceWriter {
 	}
 
 	public void write(Invoice invoice) throws IOException{
-		writer.write("1 "+ invoice.ownerTelNumber);
+		writer.write("1 "+ invoice.getOwnerTelNumber());
 		writer.newLine();
 		writer.write("5 "+ invoice.getBasicCharge());
 		writer.newLine();

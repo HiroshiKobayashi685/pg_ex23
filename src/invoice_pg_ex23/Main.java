@@ -54,14 +54,13 @@ public class Main {
 
 	private static void call(Invoice invoice,Service service, Record record){
 		int callCharge = service.calcUnitPrice(record, INITIAL_CALL_UNIT_PRICE) * record.getCallMinutes();
-		System.out.println(callCharge);
 		invoice.addCallCharge(callCharge);
 	}
 
 	private static void separate(Invoice invoice,Service service, InvoiceWriter writer) throws IOException {
 		int basicCharge = service.calcBasicCharge(INITIAL_BASIC_CHARGE);
 		invoice.setBasicCharge(basicCharge);
-		if(invoice.ownerTelNumber != null){
+		if(invoice.getOwnerTelNumber() != null){
 			writer.write(invoice);
 		}
 		invoice.clear();

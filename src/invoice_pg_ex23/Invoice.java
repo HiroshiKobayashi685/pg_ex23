@@ -2,9 +2,9 @@ package invoice_pg_ex23;
 
 public class Invoice {
 
-	String ownerTelNumber = null;
-	int basicCharge = 0;
-	int callCharge = 0;
+	private String ownerTelNumber = null;
+	private int basicCharge = 0;
+	private int callCharge = 0;
 
 	public void clear(){
 		ownerTelNumber = null;
